@@ -2,6 +2,11 @@
   max-width: 300px;
   height: 600px;
   position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
@@ -258,6 +263,16 @@
 .btn-pay:active {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(1px);
+}
+
+.wine, .milk, .cake, .chese,
+.beef, .checken, .cheeps,
+.pineapple, .banana, .aple, .salad {
+  touch-action: none; /* Предотвращает стандартные touch действия браузера */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 
